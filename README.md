@@ -89,4 +89,8 @@ For partnership inquiries, technical support, or any other matter, don't hesitat
 
 Thank you for choosing AgriDoot - Where Tradition Meets Innovation in Agriculture.
 
+<div align="center">
+
 Copyright © 2024 NovosEdge Pvt. Ltd. All Rights Reserved.
+
+</div>
