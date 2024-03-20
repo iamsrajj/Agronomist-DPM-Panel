@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Send the data to the API endpoint for signup
-    fetch("https://103.76.249.121:3000/signup", {
+    fetch("http://103.76.249.121:3000/signup", {
       method: "POST",
       body: formData,
     })
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function loginUser(formData) {
-    fetch("https://103.76.249.121:3000/signin", {
+    fetch("http://103.76.249.121:3000/signin", {
       method: "POST",
       body: formData,
     })
