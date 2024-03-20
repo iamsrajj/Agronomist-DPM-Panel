@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.append("byuser_id", userId);
 
     // Send the data to the API endpoint for disease registration
-    fetch("http://103.76.249.121:3000/deficiency_register", {
+    fetch("https://103.76.249.121:3000/deficiency_register", {
       method: "POST",
       body: formData,
     })
