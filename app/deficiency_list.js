@@ -1,5 +1,5 @@
 function fetchdeficiencyData() {
-  fetch("http://103.76.249.121:3000/deficiencys")
+  fetch("https://103.76.249.121:3000/deficiencys")
     .then((response) => response.json())
     .then((data) => {
       // Check if the response status is true
@@ -69,7 +69,7 @@ function sendDataToServer(deficiencyName, botanicalName) {
   //     botanical_name: botanicalName,
   //   }),
   // })
-  fetch("http://103.76.249.121:3000/deficiency_register", {
+  fetch("https://103.76.249.121:3000/deficiency_register", {
     method: "POST",
     body: formData,
   })
