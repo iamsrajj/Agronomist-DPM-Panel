@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function loginUser(formData) {
-    fetch("http://103.76.249.121:3000/signin", {
+    fetch("https://api.agridoot.co.in:8443/user/signin", {
       method: "POST",
       body: formData,
     })
