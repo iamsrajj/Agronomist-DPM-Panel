@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Disorder Update | Agronomist Panel</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="NovosEdge Pvt. Ltd." />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/img/AgriDoot.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/img/agridootfavicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+    />
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      id="pagestyle"
+      href="../assets/css/material-dashboard.css?v=3.1.0"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/update.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <aside
+      class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-gradient-dark"
+      id="sidenav-main"
+    >
+      <div style="height: 3.875rem">
+        <i
+          class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+          aria-hidden="true"
+          id="iconSidenav"
+        ></i>
+
+        <img
+          src="../assets/img/AgriDoot.png"
+          class="navbar-brand-img h-100"
+          alt="main_logo"
+          style="margin: 10px; height: 200px"
+        />
+        <span
+          class="ms-1 font-weight-bold text-white"
+          style="margin-left: 0.5rem !important"
+          >Agronomist Panel</span
+        >
+      </div>
+      <hr class="horizontal light mt-0 mb-2" />
+      <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white active bg-gradient-primary"
+              href="../html/dashboard.html"
+            >
+              <div
+                class="text-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <i class="material-icons opacity-10">dashboard</i>
+              </div>
+              <span class="nav-link-text ms-1">Dashboard</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidenav-footer position-absolute w-100 bottom-0"></div>
+    </aside>
+    <main
+      class="main-content position-relative max-height-vh-100 h-100 border-radius-lg"
+    >
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl"
+        id="navbarBlur"
+        data-scroll="true"
+      >
+        <div class="container-fluid py-1 px-3">
+          <nav aria-label="breadcrumb"></nav>
+          <div
+            class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4"
+            id="navbar"
+          ></div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li class="active" id="account">
+                <strong>Basic Information</strong>
+              </li>
+              <li id="other"><strong>Measures</strong></li>
+              <li id="payment"><strong>Treatment</strong></li>
+              <li id="confirm"><strong>Finish</strong></li>
+            </ul>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <br />
+            <!-- fieldsets -->
+            <fieldset>
+              <div class="form-card">
+                <label class="fieldlabels">Summary</label>
+                <textarea
+                  type="text"
+                  name="summary"
+                  id="summary"
+                  placeholder="Summary"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels">Symptoms</label>
+                <textarea
+                  type="text"
+                  name="symptoms"
+                  id="symptoms"
+                  placeholder="Symptoms"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels">Caused By</label>
+                <textarea
+                  type="text"
+                  name="caused_by"
+                  id="caused_by"
+                  placeholder="Caused By"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels">Crop List</label>
+                <textarea
+                  type="text"
+                  name="crop_list"
+                  id="crop_list"
+                  placeholder="Crop List"
+                  class="tarea-height"
+                ></textarea>
+              </div>
+              <button
+                type="button"
+                id="submit"
+                name="submit"
+                class="submit action-button"
+              >
+                Next
+              </button>
+            </fieldset>
+
+            <fieldset>
+              <div class="form-card">
+                <label class="fieldlabels">Causes</label>
+                <textarea
+                  type="text"
+                  name="causes"
+                  id="causes"
+                  placeholder="Causes"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels">Preventive Measures</label>
+                <textarea
+                  type="text"
+                  name="preventive_meas"
+                  id="preventive_meas"
+                  placeholder="Preventive Measures"
+                  class="tarea-height"
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                id="submit"
+                name="submit"
+                class="submit action-button"
+              >
+                Next
+              </button>
+              <button type="button" class="previous action-button-previous">
+                Previous
+              </button>
+            </fieldset>
+
+            <fieldset>
+              <div class="form-card">
+                <label class="fieldlabels">Organic Treatment</label>
+                <textarea
+                  type="text"
+                  name="basic_orgtreat"
+                  id="basic_orgtreat"
+                  placeholder="Organic Treatment"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels">Chemical Treatment</label>
+                <textarea
+                  type="text"
+                  name="sev_chetreat"
+                  id="sev_chetreat"
+                  placeholder="Chemical Treatment"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels">Cultural Treatment</label>
+                <textarea
+                  type="text"
+                  name="pre_cultreat"
+                  id="pre_cultreat"
+                  placeholder="Cultural Treatment"
+                  class="tarea-height"
+                ></textarea>
+
+                <label class="fieldlabels"
+                  >Image Link (Upload GDrive Folder)</label
+                >
+                <textarea
+                  type="text"
+                  name="image_urls"
+                  id="image_urls"
+                  placeholder="Url of GDrive folder with permission allowed for links"
+                  class="tarea-height"
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                id="submit"
+                name="submit"
+                class="submit action-button"
+              >
+                Submit
+              </button>
+              <button type="button" class="previous action-button-previous">
+                Previous
+              </button>
+            </fieldset>
+
+            <fieldset>
+              <div class="form-card">
+                <div class="row"></div>
+                <br /><br />
+                <h2 class="purple-text text-center">
+                  <strong>Update Sucessfully!</strong>
+                </h2>
+                <br />
+                <div id="suc" class="row justify-content-center">
+                  <div class="col-3">
+                    <img src="../assets/img/sucess.png" class="fit-image" />
+                  </div>
+                </div>
+                <br /><br />
+                <div class="row justify-content-center"></div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="../app/update_disorder.js"></script>
+    <script src="../app/view_disorder.js"></script>
+    <script src="../app/link.js"></script>
+  </body>
+</html>
